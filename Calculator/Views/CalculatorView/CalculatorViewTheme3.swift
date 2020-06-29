@@ -19,7 +19,7 @@ struct CalculatorViewTheme3: CalculatorViewThemeable {
         .font(.largeTitle)
         .foregroundColor(Color.black)
         .lineLimit(1)
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .trailing)
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
         .padding()
     )
   }
@@ -29,7 +29,6 @@ struct CalculatorViewTheme3: CalculatorViewThemeable {
       CalculatorButtonView(text: "0", action: {}, theme: CalculatorButtonTheme2())
         .background(numberBackgroundColor)
         .cornerRadius(.infinity)
-        .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
     )
   }
   
@@ -160,15 +159,14 @@ struct CalculatorViewTheme3: CalculatorViewThemeable {
   }
   
   private var primaryOperatorBackgroundColor = Color.orange
-  private var secondaryOperatorBackgroundColor = Color(red: 65.0/255.0, green: 65.0/255.0, blue: 65.0/255.0)
-  private var numberBackgroundColor = Color(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0)
+  private var secondaryOperatorBackgroundColor = Color(gray: 65)
+  private var numberBackgroundColor = Color(gray: 200)
   
   private var primaryOperatorBackground: AnyView {
     return AnyView(
       Circle()
         .fill(primaryOperatorBackgroundColor)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .padding(5)
     )
   }
   
@@ -177,7 +175,6 @@ struct CalculatorViewTheme3: CalculatorViewThemeable {
       Circle()
         .fill(secondaryOperatorBackgroundColor)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .padding(5)
     )
   }
   
@@ -186,7 +183,6 @@ struct CalculatorViewTheme3: CalculatorViewThemeable {
       Circle()
         .fill(numberBackgroundColor)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .padding(5)
     )
   }
 }

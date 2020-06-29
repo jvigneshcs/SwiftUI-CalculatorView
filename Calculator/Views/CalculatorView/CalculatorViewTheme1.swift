@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CalculatorViewTheme1: CalculatorViewThemeable {
   var backgroundColor: Color {
-    return Color(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0)
+    return Color(gray: 50)
   }
   
   var resultText: AnyView {
@@ -158,6 +158,6 @@ struct CalculatorViewTheme1: CalculatorViewThemeable {
   }
   
   private var primaryOperatorBackgroundColor = Color.orange
-  private var secondaryOperatorBackgroundColor = Color(red: 70.0/255.0, green: 70.0/255.0, blue: 70.0/255.0)
-  private var numberBackgroundColor = Color(red: 100.0/255.0, green: 100.0/255.0, blue: 100.0/255.0)
+  private var secondaryOperatorBackgroundColor = Color(gray: 70)
+  private var numberBackgroundColor = Color(gray: 100)
 }

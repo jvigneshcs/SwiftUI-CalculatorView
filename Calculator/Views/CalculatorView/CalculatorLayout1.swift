@@ -1,5 +1,5 @@
 //
-//  CalculatorView.swift
+//  CalculatorLayout1.swift
 //  Calculator
 //
 //  Created by Vignesh J on 25/06/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CalculatorView: View {
+struct CalculatorLayout1: View {
   
   var body: some View {
     VStack(spacing: 2) {
@@ -108,15 +108,19 @@ struct CalculatorView: View {
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
   }
   
-  private var theme: CalculatorViewThemeable
+  private(set) var theme: CalculatorViewThemeable
   
   init(theme: CalculatorViewThemeable = CalculatorViewTheme1()) {
     self.theme = theme
   }
 }
 
-struct CalculatorView_Previews: PreviewProvider {
+extension CalculatorLayout1: CalculatorLayoutable {
+  
+}
+
+struct CalculatorLayout1_Previews: PreviewProvider {
   static var previews: some View {
-    CalculatorView(theme: CalculatorViewTheme2())
+    CalculatorLayout1(theme: CalculatorViewTheme1())
   }
 }
