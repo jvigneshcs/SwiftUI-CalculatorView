@@ -11,16 +11,18 @@ import SwiftUI
 struct CalculatorLayout2: View {
   
   var body: some View {
-    VStack {
-      HStack {
-        self.theme.resultText
-      }
-      GeometryReader { geometryReader in
+    GeometryReader { geometryReader in
+      VStack {
+        HStack {
+          self.theme.resultText
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.heightOfResultText(forStackSize: geometryReader.size), alignment: .bottom)
         InternalCalculatorLayout(theme: self.theme,
                                  parentWidth: geometryReader.size.width,
                                  buttonSize: self.sizeOfButton(forStackSize: geometryReader.size))
           .frame(minWidth: 0, maxWidth: .infinity, alignment: .bottom)
       }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
     }
     .background(self.theme.backgroundColor)
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
@@ -35,9 +37,15 @@ struct CalculatorLayout2: View {
   
   private func sizeOfButton(forStackSize size: CGSize) -> CGSize {
     let maxWidth = (size.width / 4)
-    let maxHeight = (size.height / 5)
+    let maxHeight = (size.height / 6)
     let width = min(maxWidth, maxHeight)
     return CGSize(width: width, height: width)
+  }
+  
+  private func heightOfResultText(forStackSize size: CGSize) -> CGFloat {
+    let buttonSize = self.sizeOfButton(forStackSize: size)
+    let buttonsHeight = buttonSize.height * 5
+    return size.height - buttonsHeight
   }
 }
 
@@ -50,112 +58,113 @@ fileprivate struct InternalCalculatorLayout: View {
   var body: some View {
     VStack {
       HStack(spacing: 0) {
-        
+        Spacer(minLength: 0)
         self.theme.clearButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.plusMinusButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.percentButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.divideButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
-        
+        Spacer(minLength: 0)
       }
       
       HStack(spacing: 0) {
-        
+        Spacer(minLength: 0)
         self.theme.sevenButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.eightButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.nineButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.multiplyButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
+        Spacer(minLength: 0)
       }
       
       HStack(spacing: 0) {
-        
+        Spacer(minLength: 0)
         self.theme.fourButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.fiveButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.sixButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.minusButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
-        
+        Spacer(minLength: 0)
       }
       
       HStack(spacing: 0) {
-        
+        Spacer(minLength: 0)
         self.theme.oneButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.twoButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.threeButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.addButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
-        
+        Spacer(minLength: 0)
       }
       
       HStack(spacing: 0) {
-        
+        Spacer(minLength: 0)
         self.theme.zeroButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.widthForZeroButton(), height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.dotButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
         
-        
+        Spacer(minLength: 0)
         self.theme.equalButton
-          .padding(5)
+          .padding(self.buttonPadding)
           .frame(width: self.buttonSize.width, height: self.buttonSize.height)
-        
+        Spacer(minLength: 0)
       }
     }
   }
@@ -163,6 +172,7 @@ fileprivate struct InternalCalculatorLayout: View {
   private let theme: CalculatorViewThemeable
   private let parentWidth: CGFloat
   private let buttonSize: CGSize
+  private let buttonPadding: CGFloat = 8
   
   init(theme: CalculatorViewThemeable,
        parentWidth: CGFloat,
