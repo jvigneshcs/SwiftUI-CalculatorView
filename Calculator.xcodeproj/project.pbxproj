@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6758A83E24A4A9D300950415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6758A83D24A4A9D300950415 /* AppDelegate.swift */; };
 		6758A84024A4A9D300950415 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6758A83F24A4A9D300950415 /* SceneDelegate.swift */; };
-		6758A84224A4A9D300950415 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6758A84124A4A9D300950415 /* CalculatorView.swift */; };
+		6758A84224A4A9D300950415 /* CalculatorLayout1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6758A84124A4A9D300950415 /* CalculatorLayout1.swift */; };
 		6758A84424A4A9D600950415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6758A84324A4A9D600950415 /* Assets.xcassets */; };
 		6758A84724A4A9D600950415 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6758A84624A4A9D600950415 /* Preview Assets.xcassets */; };
 		6758A84A24A4A9D600950415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6758A84824A4A9D600950415 /* LaunchScreen.storyboard */; };
@@ -22,13 +22,17 @@
 		67E3ABB024A72E06006778B5 /* CalculatorButtonTheme2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABAF24A72E06006778B5 /* CalculatorButtonTheme2.swift */; };
 		67E3ABB524A863DF006778B5 /* MasterCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABB424A863DF006778B5 /* MasterCalculatorView.swift */; };
 		67E3ABB724A86E69006778B5 /* CalculatorViewTheme3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABB624A86E69006778B5 /* CalculatorViewTheme3.swift */; };
+		67E3ABB924A87291006778B5 /* CalculatorLayout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABB824A87291006778B5 /* CalculatorLayout2.swift */; };
+		67E3ABBB24A8731D006778B5 /* CalculatorLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBA24A8731D006778B5 /* CalculatorLayoutable.swift */; };
+		67E3ABBE24A87729006778B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBD24A87729006778B5 /* Color.swift */; };
+		67E3ABC024A8B1BE006778B5 /* CalculatorButtonTheme3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6758A83A24A4A9D300950415 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6758A83D24A4A9D300950415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6758A83F24A4A9D300950415 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6758A84124A4A9D300950415 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		6758A84124A4A9D300950415 /* CalculatorLayout1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLayout1.swift; sourceTree = "<group>"; };
 		6758A84324A4A9D600950415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6758A84624A4A9D600950415 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6758A84924A4A9D600950415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +46,10 @@
 		67E3ABAF24A72E06006778B5 /* CalculatorButtonTheme2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonTheme2.swift; sourceTree = "<group>"; };
 		67E3ABB424A863DF006778B5 /* MasterCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCalculatorView.swift; sourceTree = "<group>"; };
 		67E3ABB624A86E69006778B5 /* CalculatorViewTheme3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewTheme3.swift; sourceTree = "<group>"; };
+		67E3ABB824A87291006778B5 /* CalculatorLayout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLayout2.swift; sourceTree = "<group>"; };
+		67E3ABBA24A8731D006778B5 /* CalculatorLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLayoutable.swift; sourceTree = "<group>"; };
+		67E3ABBD24A87729006778B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonTheme3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		6758A83C24A4A9D300950415 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				67E3ABBC24A87717006778B5 /* Extensions */,
 				67E3ABB124A79063006778B5 /* ViewModels */,
 				67E3ABA224A715F2006778B5 /* Protocols */,
 				6758A85224A4AA2600950415 /* Views */,
@@ -118,6 +127,7 @@
 			children = (
 				67E3ABA324A71622006778B5 /* CalculatorViewThemeable.swift */,
 				67E3ABAB24A7289C006778B5 /* CalculatorButtonViewThemeable.swift */,
+				67E3ABBA24A8731D006778B5 /* CalculatorLayoutable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -125,7 +135,8 @@
 		67E3ABA524A71A0E006778B5 /* CalculatorView */ = {
 			isa = PBXGroup;
 			children = (
-				6758A84124A4A9D300950415 /* CalculatorView.swift */,
+				6758A84124A4A9D300950415 /* CalculatorLayout1.swift */,
+				67E3ABB824A87291006778B5 /* CalculatorLayout2.swift */,
 				67E3ABA624A71A74006778B5 /* CalculatorViewTheme1.swift */,
 				67E3ABA824A726BA006778B5 /* CalculatorViewTheme2.swift */,
 				67E3ABB624A86E69006778B5 /* CalculatorViewTheme3.swift */,
@@ -139,6 +150,7 @@
 				67E3ABA024A62009006778B5 /* CalculatorButtonView.swift */,
 				67E3ABAD24A72B2A006778B5 /* CalculatorButtonTheme1.swift */,
 				67E3ABAF24A72E06006778B5 /* CalculatorButtonTheme2.swift */,
+				67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */,
 			);
 			path = CalculatorButtonView;
 			sourceTree = "<group>";
@@ -148,6 +160,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67E3ABBC24A87717006778B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67E3ABBD24A87729006778B5 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,12 +244,16 @@
 				67E3ABAE24A72B2A006778B5 /* CalculatorButtonTheme1.swift in Sources */,
 				6758A83E24A4A9D300950415 /* AppDelegate.swift in Sources */,
 				67E3ABB524A863DF006778B5 /* MasterCalculatorView.swift in Sources */,
+				67E3ABC024A8B1BE006778B5 /* CalculatorButtonTheme3.swift in Sources */,
+				67E3ABBB24A8731D006778B5 /* CalculatorLayoutable.swift in Sources */,
 				67E3ABB024A72E06006778B5 /* CalculatorButtonTheme2.swift in Sources */,
 				67E3ABB724A86E69006778B5 /* CalculatorViewTheme3.swift in Sources */,
 				67E3ABA924A726BA006778B5 /* CalculatorViewTheme2.swift in Sources */,
 				6758A84024A4A9D300950415 /* SceneDelegate.swift in Sources */,
+				67E3ABBE24A87729006778B5 /* Color.swift in Sources */,
 				67E3ABA124A62009006778B5 /* CalculatorButtonView.swift in Sources */,
-				6758A84224A4A9D300950415 /* CalculatorView.swift in Sources */,
+				67E3ABB924A87291006778B5 /* CalculatorLayout2.swift in Sources */,
+				6758A84224A4A9D300950415 /* CalculatorLayout1.swift in Sources */,
 				67E3ABA724A71A74006778B5 /* CalculatorViewTheme1.swift in Sources */,
 				67E3ABAC24A7289C006778B5 /* CalculatorButtonViewThemeable.swift in Sources */,
 				67E3ABA424A71622006778B5 /* CalculatorViewThemeable.swift in Sources */,

@@ -26,12 +26,12 @@ struct MasterCalculatorView: View {
     )
   }
   
-  @State private var calculatorView: AnyView = AnyView(CalculatorView())
+  @State private var calculatorView: AnyView = AnyView(CalculatorLayout1())
   @State private var selectedIndex = 0
   private let supportedViews = [
-    AnyView(CalculatorView(theme: CalculatorViewTheme1())),
-    AnyView(CalculatorView(theme: CalculatorViewTheme2())),
-    AnyView(CalculatorView(theme: CalculatorViewTheme3()))
+    AnyView(CalculatorLayout1(theme: CalculatorViewTheme1())),
+    AnyView(CalculatorLayout2(theme: CalculatorViewTheme2())),
+    AnyView(CalculatorLayout2(theme: CalculatorViewTheme3()))
   ]
   
   private func supportedView(at index: Int) -> AnyView {
