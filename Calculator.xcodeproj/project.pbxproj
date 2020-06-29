@@ -25,7 +25,6 @@
 		67E3ABB924A87291006778B5 /* CalculatorLayout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABB824A87291006778B5 /* CalculatorLayout2.swift */; };
 		67E3ABBB24A8731D006778B5 /* CalculatorLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBA24A8731D006778B5 /* CalculatorLayoutable.swift */; };
 		67E3ABBE24A87729006778B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBD24A87729006778B5 /* Color.swift */; };
-		67E3ABC024A8B1BE006778B5 /* CalculatorButtonTheme3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		67E3ABB824A87291006778B5 /* CalculatorLayout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLayout2.swift; sourceTree = "<group>"; };
 		67E3ABBA24A8731D006778B5 /* CalculatorLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLayoutable.swift; sourceTree = "<group>"; };
 		67E3ABBD24A87729006778B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonTheme3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				67E3ABA024A62009006778B5 /* CalculatorButtonView.swift */,
 				67E3ABAD24A72B2A006778B5 /* CalculatorButtonTheme1.swift */,
 				67E3ABAF24A72E06006778B5 /* CalculatorButtonTheme2.swift */,
-				67E3ABBF24A8B1BE006778B5 /* CalculatorButtonTheme3.swift */,
 			);
 			path = CalculatorButtonView;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 				67E3ABAE24A72B2A006778B5 /* CalculatorButtonTheme1.swift in Sources */,
 				6758A83E24A4A9D300950415 /* AppDelegate.swift in Sources */,
 				67E3ABB524A863DF006778B5 /* MasterCalculatorView.swift in Sources */,
-				67E3ABC024A8B1BE006778B5 /* CalculatorButtonTheme3.swift in Sources */,
 				67E3ABBB24A8731D006778B5 /* CalculatorLayoutable.swift in Sources */,
 				67E3ABB024A72E06006778B5 /* CalculatorButtonTheme2.swift in Sources */,
 				67E3ABB724A86E69006778B5 /* CalculatorViewTheme3.swift in Sources */,
